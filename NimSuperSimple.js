@@ -1,4 +1,4 @@
-var count = 0, turn = 0, winner="none";
+var count = 0, turn = 0, winner="none", again = true;
 alert("Let\'s play Nim. You go first.");
 while (playAgain == true){
 	while(winner=="none"){
@@ -46,10 +46,10 @@ function cpuTurn(count){
 function playAgain(){
 	var again = prompt("Do you want to play again? y = yes ");
 	if(again == "y"){
-		return true;
+		again = true;
 	}
 	else{
 		alert("Thanks for play");
-		return false;
+		again = false;
 	}
 }
